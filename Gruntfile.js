@@ -4,7 +4,6 @@ module.exports = function(grunt) {
   this.registerTask('dist', 'Builds a distributable version of Ember Simple Auth', [
     'lint',
     'build',
-    'docs',
     'copy:dist'
   ]);
 
