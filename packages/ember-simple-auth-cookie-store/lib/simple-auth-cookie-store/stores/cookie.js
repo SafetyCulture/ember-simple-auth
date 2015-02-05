@@ -148,7 +148,7 @@ export default Base.extend({
     @private
   */
   read: function() {
-    var value = document.cookie.match(new RegExp(this.cookieName + name + '=([^;]+)')) || [];
+    var value = document.cookie.match(new RegExp(this.cookieName + '=([^;]+)')) || [];
     return decodeURIComponent(value[1] || '');
   },
 
